@@ -18,6 +18,7 @@ const Add = () => {
             id="exampleInputFirstName"
             aria-describedby="emailHelp"
             placeholder="Enter First Name"
+            required
           />
         </div>
         <div className="form-group">
@@ -29,6 +30,7 @@ const Add = () => {
             id="exampleInputLastName"
             aria-describedby="emailHelp"
             placeholder="Enter Last Name"
+            required
           />
         </div>
         <div className="form-group">
@@ -40,6 +42,7 @@ const Add = () => {
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
             placeholder="Enter email"
+            required
           />
           <small id="emailHelp" className="form-text text-muted">
             We'll never share your email with anyone else.
@@ -53,6 +56,7 @@ const Add = () => {
             className="form-control"
             id="exampleInputPassword1"
             placeholder="Password"
+            required
           />
         </div>
         <div className="form-group">
@@ -64,6 +68,7 @@ const Add = () => {
             id="exampleInputphone"
             aria-describedby="emailHelp"
             placeholder="Enter your Phone No"
+            required
           />
         </div>
         <div className="form-group">
@@ -74,6 +79,7 @@ const Add = () => {
             className="form-control"
             id="inputAddress"
             placeholder="1234 Main St"
+            required
           />
         </div>
         <div className="form-group">
@@ -94,16 +100,16 @@ const Add = () => {
               type="text"
               className="form-control"
               id="inputCity"
+              required
             />
           </div>
           <div className="form-group col-md-4">
             <label for="inputGender">Gender</label>
-            <input name="gender" id="inputGender" className="form-control">
-              {/* <option selected>Others...</option>
-              <option>Female</option>
-              <option>Male</option>
-              <option>Prefer Not to Say</option> */}
-            </input>
+            <input
+              name="gender"
+              id="inputGender"
+              className="form-control"
+            ></input>
           </div>
           <div className="form-group col-md-2">
             <label for="inputZip">Zip</label>
@@ -112,6 +118,7 @@ const Add = () => {
               type="text"
               className="form-control"
               id="inputZip"
+              required
             />
           </div>
         </div>
@@ -124,6 +131,7 @@ const Add = () => {
             id="exampleInputFirstName"
             aria-describedby="emailHelp"
             placeholder="Enter Your State"
+            required
           />
         </div>
         <button type="submit" className="btn btn-primary">
